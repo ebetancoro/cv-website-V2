@@ -5,33 +5,51 @@
         <meta charset="utf-8">
         <meta viewport="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+            .container {
+                display: flex;
+                max-width: 800px;
+                margin: 0;
+            }
+            .main-content {
+                flex: 1;
+                padding: 20px;
+            }
+            .sidebar {
+                width: 200px;
+                padding: 10px;
+            }
+        </style>
     </head>
     <body>
         <header>
             <nav class="w3-navbar w3-black">
                 <a href="index.html" class="w3-button w3-bar-item">Home</a>
                 <a href="about.html" class="w3-button w3-bar-item">About me</a>
+                <a href="experience.html" class="w3-button w3-bar-item">Experience</a>
                 <a href="portfolio.html" class="w3-button w3-bar-item">Portfolio</a>
                 <a href="contact.html" class="w3-button w3-bar-item">Contact</a>
             </nav>
         </header>
-        <main class="w3-content">
-            <section aria-label="Introduction" style = "max-width: 600px">
-                <h1 class="w3-center">Enrique Betancor</h1>
-                <p class="w3-center">I’m a 16-year-old student and embedded systems
-                developer who works with hardware and low-level programming. I build and troubleshoot embedded systems, 
-                focusing on making them functional and efficient. I’m always looking to improve my skills by exploring 
-                new technologies and tackling real-world challenges through hands-on projects.</p>
-                <aside>
-                    <h4 class="w3-center">Technologies I have worked with:</h4>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/701px-Python-logo-notext.svg.png" alt="Python" class="w3-center" style="width: 50px; height: 50px;" >
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png" alt="C++" class="w3-center" style="width: 50px; height: 50px;" >
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png" alt="HTML" class="w3-center" style="width: 50px; height: 50px;" ><br><br>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt="C" class="w3-center" style="width: 50px; height: 50px;" >
-                    <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git" class="w3-center" style="width: 50px; height: 50px;" >
-                    <img src="https://www.raspberrypi.com/app/uploads/2022/02/COLOUR-Raspberry-Pi-Symbol-Registered.png" alt="Raspberry Pi" class="w3-center" style="width: 60px; height: 60px;" >
-                </aside>
-            </section> 
-        </main>
+        <div class="container">
+            <section class="main-content">
+                <section aria-label="Introduction" style="max-width: 600px">
+                    <h1 class="w3-left">Enrique Betancor</h1>
+                    <p class="w3-left">I’m a 16-year-old student and embedded systems
+                    developer who works with hardware and low-level programming. I build and troubleshoot embedded systems, 
+                    focusing on making them functional and efficient. I’m always looking to improve my skills by exploring 
+                    new technologies and tackling real-world challenges through hands-on projects.</p>
+                </section>
+            </section>
+            <aside aria-label="side bar" class="sidebar">
+                <h4 class="w3-center">Technologies I have worked with:</h4>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/701px-Python-logo-notext.svg.png" alt="Python" class="w3-center" style="width: 50px; height: 50px;" >
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png" alt="C++" class="w3-center" style="width: 50px; height: 50px;" >
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png" alt="HTML" class="w3-center" style="width: 50px; height: 50px;" ><br><br>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt="C" class="w3-center" style="width: 50px; height: 50px;" >
+                <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git" class="w3-center" style="width: 50px; height: 50px;" >
+                <img src="https://www.raspberrypi.com/app/uploads/2022/02/COLOUR-Raspberry-Pi-Symbol-Registered.png" alt="Raspberry Pi" class="w3-center" style="width: 60px; height: 60px;" >
+            </aside>
+        </div>
     </body>
 </html>
